@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Bing Bot",
+  "description": "Performs random searches on BIng",
+  "version": "0.1",
+
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "https://www.bing.com/"
+  ],
+
+  "browser_action": {
+    "default_icon": "logo.png"
+  },
+
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  }
+}
